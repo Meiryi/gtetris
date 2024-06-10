@@ -1,0 +1,52 @@
+--[[
+	GTetris made by Meiryi :
+		None of these codes should be edited, reuploaded, or claim it's made by yourself
+		I don't care if you think anywhre needs a edit/patch, just let me know and I'll do it myself!
+]]
+
+util.AddNetworkString("GTetris-OpenGame")
+util.AddNetworkString("GTetris-FetchRooms")
+util.AddNetworkString("GTetris-CreateRoom")
+util.AddNetworkString("GTetris-JoinRoom")
+util.AddNetworkString("GTetris-ChangeRoomOptions")
+util.AddNetworkString("GTetris-CheckRoom")
+util.AddNetworkString("GTetris-LeaveRoom")
+util.AddNetworkString("GTetris-PlayerLeave")
+util.AddNetworkString("GTetris-SyncBags")
+util.AddNetworkString("GTetris-SyncGrids")
+util.AddNetworkString("GTetris-SyncCBlock")
+util.AddNetworkString("GTetris-SyncHost")
+util.AddNetworkString("GTetris-SyncHolds")
+util.AddNetworkString("GTetris-SyncRoomID")
+util.AddNetworkString("GTetris-SyncRulesets")
+util.AddNetworkString("GTetris-SyncGarbage")
+util.AddNetworkString("GTetris-SyncBotDetails")
+util.AddNetworkString("GTetris-SyncPieceSeed")
+util.AddNetworkString("GTetris-SyncPlayDetails")
+util.AddNetworkString("GTetris-SyncCRoomData")
+util.AddNetworkString("GTetris-Respond")
+util.AddNetworkString("GTetris-GetPlayers")
+util.AddNetworkString("GTetris-StartGame")
+util.AddNetworkString("GTetris-PlayerReady")
+util.AddNetworkString("GTetris-SendAttack")
+util.AddNetworkString("GTetris-PlayerDied")
+util.AddNetworkString("GTetris-GameFinished")
+util.AddNetworkString("GTetris-GetGrids")
+util.AddNetworkString("GTetris-ApplyRulesets")
+util.AddNetworkString("GTetris-KickPlayer")
+util.AddNetworkString("GTetris-BanPlayer")
+util.AddNetworkString("GTetris-DisconnectPlayer")
+util.AddNetworkString("GTetris-AddBot")
+util.AddNetworkString("GTetris-RemoveBot")
+util.AddNetworkString("GTetris-Killfeed")
+util.AddNetworkString("GTetris-PlacePiece")
+util.AddNetworkString("GTetris-HoldPiece")
+util.AddNetworkString("GTetris-RotatePiece")
+util.AddNetworkString("GTetris-ClearLines")
+util.AddNetworkString("GTetris-Boardup")
+
+function GTetris:OpenGame(player)
+	net.Start("GTetris-OpenGame")
+	net.Send(player)
+end
+
